@@ -1,0 +1,175 @@
+body{
+    font-size:14px;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    line-height:1.6;
+    font-weight:normal;
+}
+a{
+    color:#CCC;
+    text-decoration: none;
+}
+a:hover{
+    color:#DDD;
+    text-decoration: none;
+}
+
+
+/* Header -------------------------- */
+header{
+    width:100%;
+    height:440px;
+    background:url(../images/main.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 160px;
+    text-align: center;
+}
+.header-container{
+    width:100%;
+    height: 188px;
+    background: rgba(120,220,150,0.6); /* RGBとAlphaの指定 */
+    padding-top: 60px;
+}
+header h1{
+    color: #0D4208;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
+header p{
+    color: #185E12;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
+
+
+/* Headerのスマホ用 */
+@media (max-width:767px){
+    
+    header{
+        background-position: -600px center;
+    }
+    
+    .header-container{
+        background: rgba(255,50,100,0.5);
+        padding-top: 40px;
+    }
+    header h1{
+        color:#FFF;
+        font-size: 30px;
+    }
+    header p{
+        color:#FFF;
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* Profile -------------------------- */
+.profile{
+    background-color: #F7F6FF;
+    width:100%;
+    padding: 72px 0; /* 上下72 左右0 */
+    text-align: center;
+}
+.profile h2{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.profile h3{
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.profile p{
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* スマホ用 */
+@media (max-width:767px){
+    .profile{
+        padding: 72px 16px;
+        box-sizing: border-box; /* paddingをwidthの中に含む */
+    }
+}
+
+
+
+/* Works -------------------------- */
+.works{
+    background-color: #F1E6FB;
+    padding: 72px 0;
+    text-align: center;
+}
+.works h2{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.works p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.works h3{
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 24px;
+}
+.works-container{
+    width: 1024px;
+    margin: 0 auto; /* 上下0 左右auto*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie p{
+    color: #000000;
+}
+a:hover{
+    color: #0000ee;
+    text-decoration: underline;
+}
+a:visited{
+    color: #551a8b;
+    text-decoration: underline;
+}
+
+
+/* スマホ用 */
+@media (max-width:767px){
+    .works-container{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .illustration{
+        width: 100%;
+    }
+    .design{
+        width: 100%;
+    }
+    .movie{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+/* Footer -------------------------- */
+
+footer{
+    background-color: #F7F6FF;
+    padding: 72px 0;
+}
+footer p{
+    font-size: 12px;
+    text-align: center;
+}

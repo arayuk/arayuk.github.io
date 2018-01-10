@@ -1,0 +1,205 @@
+body{
+    font-size:14px;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    line-height:1.6;
+    font-weight:normal;
+}
+a{
+    color:#CCC;
+    text-decoration: none;
+}
+a:hover{
+    color:#DDD;
+    text-decoration: none;
+}
+
+
+/* Header -------------------------- */
+header{
+    width:100%;
+    height:217px;
+/*    background:url(../../images/main_m.jpg) center center no-repeat;*/
+    background-image: 
+        url(../../images/movie.png),
+        url(../../images/main_m.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 290px 304px,cover;
+    padding-top: 160px;
+    text-align: center;
+}
+.header-container{
+    width:100%;
+    height: 90px;
+    background: rgba(120,220,150,0.6); /* RGBとAlphaの指定 */
+    padding-top: 5px;
+}
+header h1{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
+
+
+
+/* Headerのスマホ用 */
+@media (max-width:767px){
+    
+    header{
+        background-position: -600px center;
+    }
+    
+    .header-container{
+        background: rgba(120,200,80,0.6);
+        padding-top: 40px;
+    }
+    header h1{
+        color:#FFF;
+        font-size: 30px;
+    }
+    header p{
+        color:#FFF;
+        font-size: 18px;
+    }
+}
+
+
+/*description ----------------------- */
+.description{
+    background-color: #DBCDBD;
+    width:100%;
+    padding: 72px 0; /* 上下72 左右0 */
+    text-align: center;
+}
+.description h2{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.description p{
+    font-size: 14px;
+    line-height: 2;
+}
+
+.linky{
+    font-size: 14px;
+    line-height: 2;
+}
+a:hover{
+    color: #0000ee;
+    text-decoration: underline;
+}
+a:visited{
+    color: #551a8b;
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img1{
+    width: 512px;
+    height: 288px;
+}
+
+.img2{
+    width: 512px;
+    height: 288px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    top: 200px;
+}
+
+/*.left{
+    width: 180px;
+    float: left;
+}
+.right{
+    width: 180px;
+    float: right;
+} */
+
+/* スマホ用 */
+@media (max-width:767px){
+    .description{
+        padding: 72px 16px;
+        box-sizing: border-box;/* paddingをwidthの中に含む */
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .container2{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+}
+
+
+
+
+/* Works -------------------------- */
+.menu{
+    background-color: #F1E6FB;
+    padding: 72px 0;
+    text-align: center;
+}
+.menu h2{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.menu p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.menu-container{
+    width: 1024px;
+    margin: 0 auto; /* 上下0 左右auto*/
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* スマホ用 */
+@media (max-width:767px){
+    .menu-container{
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .home{
+        width: 100%;
+    }
+    .illustration{
+        width: 100%;
+    }
+    .design{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+/* Footer -------------------------- */
+
+footer{
+    background-color: #F7F6FF;
+    padding: 72px 0;
+}
+footer p{
+    font-size: 12px;
+    text-align: center;
+}
